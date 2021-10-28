@@ -11,14 +11,16 @@ html(lang="en")
             ul.menus 
                 li.menus__item 
                     a(href="/") HOME
-                li.menus__item 
-                    a(href="/signup") SIGNUP
-                li.menus__item 
-                    a(href="/signin") SIGNIN 
-                li.menus__item 
-                    a(href="/logout") LOGOUT 
-                li.menus__item 
-                    a(href="/board/list") BOARD
+                if loggedIn
+                    li.menus__item 
+                        a(href="/logout") LOGOUT 
+                    li.menus__item 
+                        a(href="/board/list") BOARD
+                else    
+                    li.menus__item 
+                        a(href="/signup") SIGNUP
+                    li.menus__item 
+                        a(href="/signin") SIGNIN 
 
         block content 
 
