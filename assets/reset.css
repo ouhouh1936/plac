@@ -148,27 +148,36 @@ a {
 
 .wholeWrapper .rsWrapper {
   width: 1128px;
-  background-color: royalblue;
 }
 .rsWrapper .rsWrapper_col1 {
   width: 100%;
   height: 200px;
-  background-color: skyblue;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px #999;
 }
+
 .rsWrapper .rsWrapper_col2 {
   width: 100%;
   height: 40px;
-  background-color: slateblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
 }
 .rsWrapper .rsWrapper_col3 {
   width: 100%;
   height: 200px;
-  background-color: skyblue;
+
+  box-shadow: 3px 3px 3px 3px #999;
+  border-radius: 10px;
 }
 .rsWrapper .rsWrapper_col4 {
   width: 100%;
   height: 40px;
-  background-color: slateblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
 }
 .rsWrapper .rsWrapper_col5 {
   width: 100%;
@@ -176,21 +185,46 @@ a {
 
   display: flex;
   flex-direction: row;
+
+  box-shadow: 3px 3px 3px 3px #999;
+  border-radius: 10px;
 }
 .rsWrapper_col5 .rsWrapper_col5_col1 {
   width: 20%;
   height: 100%;
-  background-color: aquamarine;
+  background-color: #999;
 }
 .rsWrapper_col5 .rsWrapper_col5_col2 {
   width: 80%;
   height: 100%;
-  background-color: aqua;
+
+  display: flex;
+  flex-direction: column;
+}
+.rsWrapper_col5_col2 .rsWrapper_col5_col2_input {
+  margin: 10px 0px;
+  width: 50%;
+  height: 30px;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #999;
+}
+.rsWrapper_col5_col2 .rsWrapper_col5_col2_btn {
+  margin: 10px 0px;
+  width: 50%;
+  height: 30px;
+  outline: none;
+  background: none;
+  border: 1px solid #999;
+  border-radius: 3px;
 }
 .rsWrapper .rsWrapper_col6 {
   width: 100%;
   height: 80px;
-  background-color: black;
+
+  box-shadow: 3px 3px 3px 3px #999;
+  border-radius: 10px;
 }
 .wholeWrapper .XX_rigth {
   width: calc((100% - 1128px) / 2);
